@@ -12,10 +12,52 @@
   <body>
     <style>
       body {
-        background-color:#cad2c5;
+        background-color:#2e2627;
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: #c6d1bd;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #2e2627;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      .main {
+        padding: 16px;
+        margin-top: 30px;
+        height: 1500px; /* Used in this example to enable scrolling */
       }
     </style>
-    <img src="cBumFront1.png" alt="Cbum Front" width="500" height="600">
+    <div class="navbar">
+      <img src="MMlogo.png" alt="Muscle Mapper logo" width="150" height="75">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </div>
+    
+    <div class="main" style="padding-top: 100px; display: flex;">
+      <div style="margin-right: 20px;">
+        <img src="cBumFront1.png" alt="Cbum Front" width="450" height="600">
+      </div>
+      <div style="flex: 1;">
+        <img src="cBumBack1.png" alt="Cbum Back" width="450" height="600">
+      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
